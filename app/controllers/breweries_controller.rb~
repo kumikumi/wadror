@@ -82,6 +82,7 @@ class BreweriesController < ApplicationController
 
       admin_accounts[username] == password
 
+      #username == "admin" and password == "secret"
     end
   end
 
