@@ -1,11 +1,17 @@
 <h2>List of ratings</h2>
 
+<p id="notice"><%= notice %></p>
+
 <p>Number of ratings: <%= @ratings.count %> </p>
 
 <ul>
   <% @ratings.each do |rating| %>
-    <li> <%= rating %> <%= link_to 'delete', rating, :method => :delete, data: { confirm: 'Are you sure?' }%> </li>
+    <li> <%= rating %> <%= link_to rating.user.username, rating.user %> </li>
   <% end %>
 </ul>
-
+<% if not current_user.nil? %>
 <%= link_to 'New Rating', ratings_new_path %>
+<% else %>
+<p>Sign in to add a rating</p>
+<% end %>
+

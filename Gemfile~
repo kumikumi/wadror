@@ -20,6 +20,10 @@ end
 
 # loppu
 
+#ohjeessa (vko 2) käskettiin lisäämään
+gem 'byebug', group: [:development, :test]
+#loppu
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
