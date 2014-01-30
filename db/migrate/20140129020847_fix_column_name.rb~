@@ -1,0 +1,5 @@
+class FixColumnName < ActiveRecord::Migration
+  def change
+  	rename_column :memberships, :beerclub_id, :beer_club_id
+  end
+end

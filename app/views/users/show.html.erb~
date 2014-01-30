@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+<% if @user.ratings.empty? %>
+	<p>No ratings</p>
+<% else %>
+	<p>Has <%= pluralize(@user.ratings.count, "rating") %>, average <%= @user.average_rating %></p>
+	
+	<ul>
+  	<% @user.ratings.each do |rating| %>
+    	<li> 
+    	<%= rating %> 
+    	
+    	<% if @user == current_user %>
+    	<%= link_to 'delete', rating, :method => :delete, data: { confirm: 'Are you sure?' }%>  
+    	<% end %>
+    	
+    	</li>
+  	<% end %>
+	</ul>
+	
+<% end %>
+
+<% if @user.beerclubs.empty? %>
+	<p>No beerclubs</p>
+<% else %>
+	<p>Member of <%= pluralize(@user.beerclubs.count, "beerclub") %></p>
+	
+	<ul>
+  	<% @user.beerclubs.each do |beerclub| %>
+    	<li> <%= link_to beerclub.name, beerclub %> (<%= link_to 'delete', beerclub, :method => :delete, data: { confirm: 'Are you sure?' }%>) </li>
+  	<% end %>
+	</ul>
+	
+<% end %>
+
+
+<% if @user == current_user %>
+<%= link_to 'Edit', edit_user_path(@user) %> | 
+<%= link_to 'Delete user', @user, method: :delete, data: { confirm: 'Are you sure?' } %> | 
+<% end %>
+<%= link_to 'Back', users_path %>
