@@ -28,6 +28,21 @@ gem 'byebug', group: [:development, :test]
 gem 'bcrypt-ruby', '~> 3.1.2'
 #loppu
 
+#ohjeessa (vko 4) käskettiin lisäämään
+group :test do
+  gem 'rspec-rails', '~> 2.14.1'
+end
+#loppu
+
+#ja tämä (vko 4)
+group :test do
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'simplecov', require: false
+end
+#loppu
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

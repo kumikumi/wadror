@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+- 2.0.0
+script:
+- bundle exec rake db:migrate --trace
+- RAILS_ENV=test bundle exec rake db:migrate --trace
+- bundle exec rake db:test:prepare
+- bundle exec rspec -fd spec/
+deploy:
+  provider: heroku
+  api_key:
+    secure: fjVObLR37AkYsXVlVygFdqkJOKCD+LNe6m8hR/5Y7rbgtf5OT23duUaulunb8v4rs/iKXRZqFpXex2ToHfC/IbjN781UER74CgWzbt8Df2O5FFlFinWoqL6HzU+8xUZHFMfjXIyA4mGr9NcJ5ZbGnNnxQwTEfQPutB47cs4siFk=
+  run: "rake db:migrate"
+  app: thawing-oasis-7183
+  on:
+    repo: kumikumi/wadror

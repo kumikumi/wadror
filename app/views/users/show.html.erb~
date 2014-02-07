@@ -9,6 +9,11 @@
 <% else %>
 	<p>Has <%= pluralize(@user.ratings.count, "rating") %>, average <%= @user.average_rating %></p>
 	
+	Favorite style: <%= @user.favorite_style %>
+    	<br>
+    	Favorite brewery: <%= @user.favorite_brewery.name %>
+	<br>
+	
 	<ul>
   	<% @user.ratings.each do |rating| %>
     	<li> 
@@ -39,7 +44,7 @@
 
 
 <% if @user == current_user %>
-<%= link_to 'Edit', edit_user_path(@user) %> | 
+<%= link_to 'Change password', edit_user_path(@user) %> | 
 <%= link_to 'Delete user', @user, method: :delete, data: { confirm: 'Are you sure?' } %> | 
 <% end %>
 <%= link_to 'Back', users_path %>
