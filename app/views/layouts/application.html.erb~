@@ -12,7 +12,8 @@
 <%= link_to 'Breweries', breweries_path %>
 <%= link_to 'Beers', beers_path %>
 <%= link_to 'BeerClubs', beerclubs_path %>
-<%= link_to 'Ratings', ratings_path %> |
+<%= link_to 'Ratings', ratings_path %>
+<%= link_to 'Users', users_path %> |
 
 <% if not current_user.nil? %>
   <%= link_to current_user.username, current_user %> 
@@ -27,7 +28,10 @@
 
 </div>
 
+<div id="page">
+
 <%= yield %>
 
+</div>
 </body>
 </html>

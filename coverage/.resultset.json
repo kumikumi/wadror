@@ -394,6 +394,8 @@
       "/home/mikko/Documents/programming/rails/ratebeer/app/controllers/beerclubs_controller.rb": [
         1,
         1,
+        1,
+        1,
         null,
         null,
         null,
@@ -477,8 +479,16 @@
         1,
         null,
         1,
-        101,
-        79,
+        124,
+        87,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        0,
         null,
         null,
         null
@@ -1117,6 +1127,7 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         1,
@@ -1191,16 +1202,6 @@
         0,
         null,
         null,
-        1,
-        1,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
         null
       ],
       "/home/mikko/Documents/programming/rails/ratebeer/app/controllers/ratings_controller.rb": [
@@ -1237,6 +1238,8 @@
         null
       ],
       "/home/mikko/Documents/programming/rails/ratebeer/app/controllers/beers_controller.rb": [
+        1,
+        1,
         1,
         1,
         1,
@@ -1330,6 +1333,6 @@
         null
       ]
     },
-    "timestamp": 1391730559
+    "timestamp": 1391738448
   }
 }
