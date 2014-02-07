@@ -2,5 +2,5 @@
 
 Web-linkki: http://thawing-oasis-7183.herokuapp.com/breweries
 
-[![Build Status](https://travis-ci.org/mluukkai/ratebeer-public.png)](https://travis-ci.org/mluukkai/ratebeer-public)
+[![Build Status](https://travis-ci.org/kumikumi/wadror.png)](https://travis-ci.org/kumikumi/wadror)
 
