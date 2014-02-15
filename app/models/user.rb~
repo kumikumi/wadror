@@ -28,5 +28,13 @@ class User < ActiveRecord::Base
     (average_ratings group_by_brewery).max_by { |brewery, average| average }[0]
   end
 
+  def average_ratings(groups)
+    groups.keys.each do |key|
+      sum = groups[key].inject(0.0) { |sum, rating| sum + rating.score }
+      groups[key] = sum / groups[key].count
+    end
+    return groups
+  end
+
 
 end

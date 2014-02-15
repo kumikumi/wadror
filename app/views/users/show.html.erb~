@@ -9,10 +9,12 @@
 <% else %>
 	<p>Has <%= pluralize(@user.ratings.count, "rating") %>, average <%= @user.average_rating %></p>
 	
+	<p>
 	Favorite style: <%= @user.favorite_style %>
     	<br>
     	Favorite brewery: <%= @user.favorite_brewery.name %>
 	<br>
+	</p>
 	
 	<ul>
   	<% @user.ratings.each do |rating| %>

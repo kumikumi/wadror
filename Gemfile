@@ -40,7 +40,15 @@ group :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov', require: false
+  #ja tämä (vko 5)
+  gem 'webmock'
+  #loppu
 end
+#loppu
+
+#ohjeessa (vko 5) käskettiin lisäämään
+gem 'httparty'
+gem "rails-settings-cached", "0.3.1"
 #loppu
 
 # Use SCSS for stylesheets

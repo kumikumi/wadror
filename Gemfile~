@@ -39,7 +39,15 @@ group :test do
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'launchy'
+  gem 'simplecov', require: false
+  #ja tämä (vko 5)
+  gem 'webmock'
+  #loppu
 end
+#loppu
+
+#ohjeessa (vko 5) käskettiin lisäämään
+gem 'httparty'
 #loppu
 
 # Use SCSS for stylesheets

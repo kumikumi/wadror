@@ -8,8 +8,11 @@
 </head>
 <body>
 
+<div id="page">
+
 <div class="navibar">
 <%= link_to 'Breweries', breweries_path %>
+<%= link_to 'Places', places_path %>
 <%= link_to 'Beers', beers_path %>
 <%= link_to 'BeerClubs', beerclubs_path %>
 <%= link_to 'Ratings', ratings_path %>
@@ -28,7 +31,7 @@
 
 </div>
 
-<div id="page">
+
 
 <%= yield %>
 

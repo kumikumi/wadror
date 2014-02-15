@@ -28,5 +28,11 @@
 	
 <% end %>
 
-<%= link_to 'Edit', edit_beerclub_path(@beerclub) %> |
-<%= link_to 'Back', beerclubs_path %>
+<% if current_user and not current_user.beerclubs.include?(@beerclub) %>
+<%= form_for(@membership) do |f| %>
+    <%= f.hidden_field :beerclub_id %>
+    <%= f.submit value:"Join this beerclub" %>
+ <% end %>
+<% end %>
+
+<%= link_to 'Edit', edit_beerclub_path(@beerclub) if current_user %>

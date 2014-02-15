@@ -12,5 +12,10 @@ class Brewery < ActiveRecord::Base
       errors.add(:year, "can't be in the future")
     end
   end
+  
+  def restart
+  	self.year = 2014
+  	puts "changed year to #{year}"
+  end
 
 end
