@@ -11,9 +11,7 @@
 // about supported directives.
 //
 //= require jquery
-// Ohjeessa (vko 6) käskettiin lisäämään:
 //= require jquery.turbolinks
-// loppu
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .

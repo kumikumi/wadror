@@ -43,12 +43,20 @@ group :test do
   #ja tämä (vko 5)
   gem 'webmock'
   #loppu
+  #ja tämä (vko 6)
+  gem 'selenium-webdriver' 
+  gem 'database_cleaner', '< 1.1.0'
+  #loppu
 end
 #loppu
 
 #ohjeessa (vko 5) käskettiin lisäämään
 gem 'httparty'
 gem "rails-settings-cached", "0.3.1"
+#loppu
+
+#ohjeessa (vko 6) käskettiin lisäämään
+gem 'jquery-turbolinks'
 #loppu
 
 # Use SCSS for stylesheets
